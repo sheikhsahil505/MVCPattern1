@@ -1,0 +1,75 @@
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet-mapping>
+    <servlet-name>sk</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sk</servlet-name>
+    <servlet-class>com.controller.LoginServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>registrationForm</servlet-name>
+    <url-pattern>/formdata</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>registrationForm</servlet-name>
+    <servlet-class>com.controller.FormServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>NewUser</servlet-name>
+    <url-pattern>/newUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NewUser</servlet-name>
+    <servlet-class>com.controller.NewUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ListAllMapping</servlet-name>
+    <url-pattern>/listAll</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListAllMapping</servlet-name>
+    <servlet-class>com.controller.ListAllServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteRecords</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteRecords</servlet-name>
+    <servlet-class>com.controller.DeleteRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updateRecords</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updatedById</servlet-name>
+    <servlet-class>com.controller.UpdateRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatedById</servlet-name>
+    <url-pattern>/updated</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updateRecords</servlet-name>
+    <servlet-class>com.controller.FindById</servlet-class>
+  </servlet>
+</web-app>
